@@ -1,0 +1,19 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "Odin project library",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "google-chrome-stable public/index.html &"
+  },
+  "repository": {
+    "type": "git",
+    "url": "library"
+  },
+  "author": "Jeremy Wells",
+  "license": "ISC",
+  "dependencies": {
+    "reload": "^3.2.1"
+  }
+}

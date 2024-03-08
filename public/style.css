@@ -1,0 +1,153 @@
+:root {
+	--black: #040403;
+	--reseda-green: #5b7553;
+	--cambridge-blue: #8eb897;
+	--tea-green: #C3E8Bd;
+	--celadon: #9DDBAD;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--black);
+
+
+}
+body h1 { 
+	top: 10px;
+	color: var(--reseda-green);
+	text-align: center;
+	font-size: 5rem;
+
+}
+
+
+.new-book{
+	margin: auto;
+	width: 50%;
+	height: 20%;
+	z-index: 100;
+	border-radius: 5px;
+	background-color: var(--tea-green);
+}
+.new-book form{ 
+	margin: auto;
+	width: 80%;
+	height: 80%;
+
+}
+
+.new-book input{
+	margin: auto;
+	padding: 10px;
+}
+
+.new-book h1 {
+	font-size: 2em;
+	align-self: center;
+	color: var(--black)
+}
+
+.add-book-btn{
+	position: absolute;
+	top: 50px;
+	right: 40%;
+	border-radius: 5px;
+	width: 80px;
+	height: 40px;
+
+
+}
+
+.read {
+
+	background-color: var(--celadon) !important;
+}
+
+.library{
+	margin: auto;
+	justify-self: center;
+	align-self: center;
+	display: grid;
+	width: 50%;
+	height: 50%;
+	grid-template-rows: repeat(auto,auto);
+	grid-template-columns: repeat(4,auto);
+	gap: 40px;
+
+}
+
+.card {
+	background-color: rgb(242,242,242);
+	margin: 5px;
+	border-radius: 5px;
+	max-height: 400px;
+}
+
+.card h1{
+	color: black;
+	font-size: 2em;
+	position: relative;
+	top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-weight: bold;
+
+}
+.card p{
+	position: relative;
+	bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+
+/* CSS */
+.card button {
+  background-color: var(--tea-green);
+  border: 1px solid var(--celadon);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: black;
+  cursor: pointer;
+  display: block;
+  font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  line-height: 100%;
+  margin: auto;
+  outline: 0;
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+	max-width: 100px;
+}
+
+.card button:hover {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+  text-decoration: none;
+  transition-duration: .15s, .15s;
+}
+
+.card button:active {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+
+.card button:disabled {
+  cursor: not-allowed;
+  opacity: .6;
+}
+
+.card button:disabled:active {
+  pointer-events: none;
+}
+
+.card button:disabled:hover {
+  box-shadow: none;
+}
+
