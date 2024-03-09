@@ -7,8 +7,8 @@
 }
 
 body {
-	width: 100vw;
-	height: 100vh;
+	width: 90%;
+	height: 100%;
 	background-color: var(--black);
 
 
@@ -51,11 +51,35 @@ body h1 {
 .add-book-btn{
 	position: absolute;
 	top: 50px;
-	right: 40%;
+	right: 30%;
 	border-radius: 5px;
-	width: 80px;
-	height: 40px;
+  background-color: var(--tea-green);
+  border: 1px solid var(--celadon);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: black;
+  cursor: pointer;
+  display: block;
+  font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  line-height: 100%;
+  margin: auto;
+  outline: 0;
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+	max-width: 100px;
 
+}
+.card-buttons{
+	width: 100%;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 
 }
 
@@ -82,6 +106,7 @@ body h1 {
 	margin: 5px;
 	border-radius: 5px;
 	max-height: 400px;
+	min-width: 300px;
 }
 
 .card h1{
@@ -114,9 +139,9 @@ body h1 {
   cursor: pointer;
   display: block;
   font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: auto;
   font-size: 17px;
   line-height: 100%;
-  margin: auto;
   outline: 0;
   padding: 11px 15px 12px;
   text-align: center;

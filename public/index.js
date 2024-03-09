@@ -34,18 +34,23 @@ function showBooks() {
 		p.appendChild(document.createTextNode(book.author));
 		card.appendChild(p);
 		lib.appendChild(card);
+		let buttondiv = document.createElement("div");
+		buttondiv.classList.add("card-buttons");
 		let remove = document.createElement('button')
 		remove.appendChild(document.createTextNode("Remove"))
 		remove.onclick = () => {
 			removeBookAt(i)
 		}
-		card.appendChild(remove);
+		remove.classList.add("remove")
+		buttondiv.appendChild(remove);
 		let markRead = document.createElement('button')
-		markRead.appendChild(document.createTextNode("Read"))
+		markRead.appendChild(document.createTextNode("Mark as Read"))
+		markRead.classList.add("mark-read")
 		markRead.onclick = () => {
 			markReadBookAt(i)
 		}
-		card.appendChild(markRead);
+		buttondiv.appendChild(markRead);
+		card.appendChild(buttondiv);
 	});
 }
 
