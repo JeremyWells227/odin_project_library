@@ -1,10 +1,11 @@
 
 
 
-function Book(title, author) {
-	this.title = title;
-	this.author = author;
-	return this
+class Book {
+	constructor(title,author){
+		this.title = title;
+		this.author = author;
+	}
 }
 const myLibrary = [
 	new Book("The count of Monte Cristo", "Alexandre Dumas"),
